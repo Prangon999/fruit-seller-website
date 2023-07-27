@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<!-- font awesome setup  -->
+     <script src="https://kit.fontawesome.com/b6d9aefcee.js" crossorigin="anonymous"></script>
     <!-- tailwind and daisy ui  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <!-- tailwind intillicence -->
@@ -33,8 +35,28 @@
 </head>
 <body class="font-lato"> 
     <header>
-        <nav> 
-
+         <nav> 
+          <div class="navbar bg-fruit-primary text-white mb-20">
+            <div class="navbar-start rounded-l-full">
+             <div >
+              <ul class="flex gap-5"> 
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Shop</li>
+                <li>All Fruits</li>
+              </ul>
+             </div>
+            </div>
+            <div class="navbar-center ">
+              <img class="mr-0" src="images/logo.png" alt="">
+              <a class="btn btn-ghost normal-case text-5xl font-bold mr-24">Fruit Burst</a>
+            </div>
+            <div class="form-control gap-20 relative">
+              <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto"/>
+              <i class="fa-solid fa-magnifying-glass -mt-28 -mr-28 text-black"></i>
+            </div>
+            
+          </div>
         </nav>
  <!-- banner section  --> 
  <section>
@@ -109,15 +131,40 @@
         </div>
       </div>
  </section>
+ <!-- bonus related styles in header -->
+ <section class="">
+  <div class=" hidden image-container lg:flex border-2 w-8/12 ml-40 absolute bg-white -mt-20">
+    <div>
+      <img src="images/fruit1.png" alt="">
+      <p>Strawberry</p>
+    </div>
+    <div>
+      <img src="images/fruit2.png" alt="">
+      <p>Orange</p>
+    </div>
+    <div>
+      <img src="images/fruit3.png" alt="">
+      <p>Mango</p>
+    </div>
+    <div>
+      <img src="images/fruit4.png" alt="">
+      <p>Strawberry</p>
+    </div>
+    <div>
+      <img src="images/fruit5.png" alt="">
+      <p>Mango</p>
+    </div>
+  </div>
+ </section>
     </header>
     <main>
 <!-- Deals of the day section  -->
 <section>
     <div class="offer-container ">
         <div class="fruit-items flex flex-col lg:flex-row mt-60 text-center">
-            <div class="item-content mr-40">
-                <h3 class="text-5xl font-extrabold mb-5 ">Deal of the day</h3>
-            <p class="text-xl font-medium ml-36 lg:ml-5 ">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p> 
+            <div class="item-content mr-16">
+                <h3 class="text-5xl font-extrabold mb-1 lg:mb-5 ml-24">Deal of the day</h3>
+            <p class="text-xl font-medium ml-20 lg:ml-36 ">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p> 
             </div>
             <div class="grid grid-flow-col gap-5 text-center auto-cols-max justify-center ">
                 <div class="flex flex-col">
@@ -224,21 +271,61 @@
     </div>
 </section> 
 <!-- section 2 start -->
-<div class="hero mt-24" style="background-image: url(./images/banner1.png);">
+<div class="hero min-h-screen mt-32" style="background-image: url(./images/banner1.png);">
   <div class="hero-overlay bg-opacity-60"></div>
   <div class="hero-content text-center text-neutral-content">
-    <div class="max-w-md h-[1000]">
-      <h1 class="mb-5 mt-32 text-5xl font-bold">Meet the team section</h1>
+    <div class="max-w-md">
+      <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
       <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-      
-        <div class="">
-          <img class="h-10 w-10" src="images/member1.png" alt="">
-          <div><h3>Awlad Hossain</h3>
-            <p>Fruits Expert</p></div>
-        
+      <div class="flex gap-5">
+        <div class="flex flex-col">
+        <img class="w-32 h-32 " src="images/member1.png" alt="">
+        <h3>Awlad Hossain</h3>
+        <p>Fruits Expert</p>
+        <div class="icon">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+      </div>
+        <div class="flex flex-col">
+        <img class="w-32 h-32 " src="images/member2.png" alt="">
+        <h3>Safia Chowdhury</h3>
+        <p>Fruits Expert</p>
+        <div class="icon">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+      </div>
+        <div class="flex flex-col">
+        <img class="w-32 h-32 " src="images/member3.png" alt="">
+        <h3>Chaity</h3>
+        <p>Fruits Expert</p>
+        <div class="icon">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+      </div>
+        <div class="flex flex-col">
+        <img class="w-32 h-32 " src="images/member4.png" alt="">
+        <h3>Chaity</h3>
+        <p>Fruits Expert</p>
+        <div class="icon">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
       </div>
     </div>
   </div>
+  </div> 
+</div>
+<!-- why choose us related works  -->
+<div class="mt-24 "> 
+  <h2 class="text-5xl font-extrabold text-center mb-4">Why Choose Us</h2>
+  <p class="text-xl font-light ">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
 </div>
     </main> 
     <!-- footer related works -->
@@ -247,7 +334,7 @@
         <img src="images/logo.png" alt="">
         <h2 class="text-4xl font-bold">Fruit Burst</h2>
       </div>
-      <div class="grid grid-flow-col gap-4">
+      <div class="grid lg:grid-flow-col gap-4">
         <a class="link link-hover">Home</a> 
         <a class="link link-hover">About Us</a> 
         <a class="link link-hover">Shop</a> 
@@ -256,7 +343,7 @@
         <a class="link link-hover">My Account</a>
       </div> 
       <div>
-        <div class="grid grid-flow-col gap-4">
+        <div class="grid lg:grid-flow-col gap-4">
           <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a> 
           <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a> 
           <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
